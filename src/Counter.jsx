@@ -11,15 +11,18 @@ const Counter = () => {
   }
 
   return (
-    <div className="flex items-center justify-center h-20 w-72 border-2 border-black rounded">
+    <div className="flex items-center justify-center h-20 w-72 border-2 border-black rounded ">
       <button
         className="bg-blue-500 text-white p-2 rounded-md"
-        onClick={handleClick}
+        onClick={() => updateCounter(counter + 1)}
       >
         Increment
       </button>
       <p>Count: {counter}</p>
-      <button className="bg-blue-500 text-white p-2 rounded-md">
+      <button
+        className="bg-blue-500 text-white p-2 rounded-md"
+        onClick={() => updateCounter(counter - 1)}
+      >
         Decrement
       </button>
     </div>
