@@ -11,7 +11,7 @@ const Counter = () => {
   }
 
   return (
-    <div className="flex items-center justify-center h-20 w-72 border-2 border-black rounded ">
+    <div className="flex items-center justify-center h-20 w-72  rounded margin-left-30px">
       <button
         className="bg-blue-500 text-white p-2 rounded-md"
         onClick={() => updateCounter(counter + 1)}
